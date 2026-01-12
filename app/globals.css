@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f8f8f2;
+  --panel: #ffffff;
+  --text: #1f1f1f;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+}
+
+body {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  background: var(--background);
+  color: var(--text);
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
