@@ -1,6 +1,13 @@
+import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
+
+// Setup Cloudflare platform for local development
+if (process.env.NODE_ENV === 'development') {
+  await setupDevPlatform();
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
 };
 
 export default nextConfig;

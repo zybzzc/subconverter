@@ -7,22 +7,32 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:cf": "npx @cloudflare/next-on-pages",
+    "preview": "npx wrangler pages dev .vercel/output/static",
+    "deploy": "npx wrangler pages deploy .vercel/output/static",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "js-yaml": "^4.1.1",
+    "lucide-react": "^0.562.0",
     "next": "15.1.6",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.0.0",
+    "@cloudflare/next-on-pages": "^1.13.0",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.0.6",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
-    "autoprefixer": "10.4.20",
-    "postcss": "8.4.33",
-    "tailwindcss": "4.0.0",
-    "typescript": "5.3.3"
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "3",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "5.3.3",
+    "wrangler": "^4.0.0"
   }
 }

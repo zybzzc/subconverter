@@ -3,3 +3,16 @@ node_modules
 out
 .env*
 bun.lockb
+
+# Build outputs
+.vercel
+.wrangler
+
+# Generated YAML files
+clash-config-*.yaml
+full.yaml
+example.yaml
+
+# Test data (should not be committed)
+test_data.json
+test-api.js

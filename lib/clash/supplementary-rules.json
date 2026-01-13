@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-13",
+  "description": "补充规则预设：用于在远程规则集更新之前快速添加新域名/IP规则",
+  "rules": {
+    "ai": {
+      "name": "AI 服务补充规则",
+      "domains": [
+        "factory.ai",
+        "*.factory.ai"
+      ]
+    }
+  }
+}
